@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenlöschung — Namenstag</title>
+<style>
+  :root {
+    --text: #2a1f15;
+    --muted: #6b5d4d;
+    --gold: #c9a86b;
+    --bg: #faf6ee;
+    --surface: #ffffff;
+    --border: #e8dec9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    margin: 40px 0 12px;
+    color: var(--text);
+    border-left: 3px solid var(--gold);
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+  p, li { font-size: 16px; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  a { color: #8a6a30; text-decoration: underline; }
+  a:hover { color: var(--gold); }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 12px;
+  }
+  .contact-box p { margin: 4px 0; }
+  .lang-switch {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 64px 0 0;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Datenlöschung</h1>
+  <p class="meta">Namenstag · App-Paket <code>ch.slaven.namenstag</code> · Stand Juni 2026</p>
+  <p class="lang-switch">English version: <a href="delete_data_en.html">delete_data_en.html</a></p>
+</header>
+
+<h2>1. Überblick</h2>
+<p>
+  Diese Seite beschreibt, welche Daten die App <strong>Namenstag</strong> von <strong>Nosa Studio</strong>
+  erhebt und wie Sie die Löschung Ihrer Daten beantragen können. Namenstag ist so konzipiert, dass möglichst
+  wenig personenbezogene Daten verarbeitet werden: <strong>es ist kein Benutzerkonto erforderlich</strong>,
+  und die wichtigsten Daten (Favoriten, Kontaktdaten) verbleiben ausschliesslich auf Ihrem Gerät.
+</p>
+
+<h2>2. Welche Daten erhebt Namenstag?</h2>
+
+<h3>2.1 Kauf- und Abonnementdaten (RevenueCat)</h3>
+<p>
+  Wenn Sie ein Abonnement abschliessen oder einen Einmalkauf tätigen, wird die Transaktion von
+  <strong>RevenueCat</strong> verarbeitet, unserem Abrechnungs- und Abonnementdienstleister. RevenueCat
+  speichert auf seinen Servern eine <strong>Kunden-ID (Customer ID)</strong>, den Kaufverlauf sowie den
+  Abonnementstatus, um Käufe geräteübergreifend wiederherstellen zu können. Wir sehen oder speichern keine
+  Zahlungskartendaten.
+</p>
+
+<h3>2.2 Anonyme Nutzungsstatistik (PostHog)</h3>
+<p>
+  Die App verwendet <strong>PostHog</strong>, um anonyme Nutzungsstatistiken zu erfassen (z. B. welche
+  Funktionen verwendet werden, Absturzdiagnosen). Es werden <strong>keine personenbezogenen Identifikatoren</strong>
+  übermittelt — keine Namen, keine E-Mail-Adressen, keine Kontaktlisten, keine präzise Standortbestimmung.
+  PostHog vergibt pro Installation eine zufällig generierte Kennung, die beim Löschen der App-Daten oder
+  Deinstallation zurückgesetzt wird.
+</p>
+
+<h3>2.3 Favoriten und Kontakte-Cache (nur lokal)</h3>
+<p>
+  Ihre <strong>Favoriten</strong> sowie der <strong>Cache der Kontaktnamen</strong>, die mit dem
+  Namenstagskalender abgeglichen werden, werden ausschliesslich <strong>lokal auf Ihrem Gerät</strong>
+  gespeichert. Diese Daten werden <strong>nicht an unsere Server übertragen</strong> und werden automatisch
+  entfernt, sobald Sie die App deinstallieren oder die App-Daten in den Android-Systemeinstellungen löschen.
+</p>
+
+<h2>3. Wie kann ich die Löschung meiner Daten beantragen?</h2>
+
+<h3>3.1 Lokale Daten auf dem Gerät</h3>
+<div class="callout">
+  Favoriten und der Kontakte-Cache liegen <strong>nur auf Ihrem Gerät</strong>. Sie löschen diese Daten
+  unmittelbar, indem Sie die App deinstallieren oder die App-Daten in den Android-Systemeinstellungen
+  löschen. Eine Anfrage an uns ist hierfür nicht erforderlich.
+</div>
+
+<h3>3.2 Server-seitige Daten (RevenueCat, PostHog)</h3>
+<p>
+  Um die Löschung Ihrer bei RevenueCat oder PostHog gespeicherten Daten zu beantragen, senden Sie eine
+  E-Mail an <a href="mailto:support.nosastudio@gmail.com">support.nosastudio@gmail.com</a> mit dem Betreff:
+</p>
+<div class="callout">
+  <strong>Datenlöschung Namenstag</strong>
+</div>
+<p>Bitte geben Sie in Ihrer Nachricht eine der folgenden Angaben an, damit wir Ihre Daten zuordnen können:</p>
+<ul>
+  <li>Ihre <strong>RevenueCat Customer ID</strong> (in der App unter <em>Einstellungen</em> einsehbar), oder</li>
+  <li>die <strong>E-Mail-Adresse</strong>, die Sie für den Kauf im Google Play Store verwendet haben.</li>
+</ul>
+<p>
+  Wir bearbeiten Ihre Anfrage innerhalb von <strong>30 Tagen</strong>, leiten die Löschung an unsere
+  Auftragsverarbeiter (RevenueCat und ggf. PostHog) weiter und bestätigen Ihnen den Abschluss per E-Mail.
+</p>
+
+<h2>4. Folgen der Löschung</h2>
+<ul>
+  <li>Ein laufendes Abonnement endet regulär zum Ende des bereits bezahlten Abrechnungszeitraums; bereits
+    geleistete Zahlungen werden nicht erstattet.</li>
+  <li>Nach der Löschung der RevenueCat Customer ID können Käufe nicht mehr automatisch auf einem neuen
+    Gerät wiederhergestellt werden.</li>
+  <li>Aus rechtlichen Gründen (z. B. steuerliche Aufbewahrungspflichten) können wir Rechnungs- und
+    Transaktionsnachweise für die gesetzlich vorgeschriebene Dauer aufbewahren.</li>
+</ul>
+
+<h2>5. Kontakt</h2>
+<div class="contact-box">
+  <p><strong>Nosa Studio</strong></p>
+  <p>Schweiz</p>
+  <p>E-Mail: <a href="mailto:support.nosastudio@gmail.com">support.nosastudio@gmail.com</a></p>
+  <p>App-Paket: <code>ch.slaven.namenstag</code></p>
+</div>
+
+<footer>
+  &copy; 2026 Nosa Studio · Stand Juni 2026 · Siehe auch unsere
+  <a href="privacy_policy.html">Datenschutzerklärung</a>.
+</footer>
+
+</div>
+</body>
+</html>

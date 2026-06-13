@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Deletion — Namenstag</title>
+<style>
+  :root {
+    --text: #2a1f15;
+    --muted: #6b5d4d;
+    --gold: #c9a86b;
+    --bg: #faf6ee;
+    --surface: #ffffff;
+    --border: #e8dec9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    margin: 40px 0 12px;
+    color: var(--text);
+    border-left: 3px solid var(--gold);
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+  p, li { font-size: 16px; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  a { color: #8a6a30; text-decoration: underline; }
+  a:hover { color: var(--gold); }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 12px;
+  }
+  .contact-box p { margin: 4px 0; }
+  .lang-switch {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Data Deletion</h1>
+  <p class="meta">Namenstag · App package <code>ch.slaven.namenstag</code> · June 2026</p>
+  <p class="lang-switch">Deutsche Version: <a href="delete_data.html">delete_data.html</a></p>
+</header>
+
+<h2>1. Overview</h2>
+<p>
+  This page describes what data the <strong>Namenstag</strong> app by <strong>Nosa Studio</strong>
+  collects and how you can request its deletion. Namenstag is designed to process as little personal data
+  as possible: <strong>no user account is required</strong>, and the most important data (favorites and
+  contact data) stays on your device.
+</p>
+
+<h2>2. What data does Namenstag collect?</h2>
+
+<h3>2.1 Purchase and subscription data (RevenueCat)</h3>
+<p>
+  When you subscribe or make a one-time purchase, the transaction is processed by <strong>RevenueCat</strong>,
+  our subscription and billing provider. RevenueCat stores a <strong>customer ID</strong>, your purchase
+  history, and your subscription status on its servers so that purchases can be restored across devices.
+  We do not see or store your payment card details.
+</p>
+
+<h3>2.2 Anonymous usage analytics (PostHog)</h3>
+<p>
+  The app uses <strong>PostHog</strong> to collect anonymous usage analytics (e.g. which features are used,
+  crash diagnostics). <strong>No personal identifiers</strong> are transmitted — no names, no email
+  addresses, no contact lists, no precise location. PostHog assigns a randomly generated identifier per
+  install, which is reset when the app's data is cleared or the app is uninstalled.
+</p>
+
+<h3>2.3 Favorites and contacts cache (local only)</h3>
+<p>
+  Your <strong>favorites</strong> and the <strong>cache of contact names</strong> matched against the
+  name-day calendar are stored <strong>only locally on your device</strong>. This data is
+  <strong>never transmitted to our servers</strong> and is automatically removed when you uninstall the
+  app or clear the app's data in Android system settings.
+</p>
+
+<h2>3. How do I request deletion of my data?</h2>
+
+<h3>3.1 Local on-device data</h3>
+<div class="callout">
+  Favorites and the contacts cache live <strong>only on your device</strong>. You delete them immediately
+  by uninstalling the app or clearing the app's data in Android system settings. No request to us is
+  required.
+</div>
+
+<h3>3.2 Server-side data (RevenueCat, PostHog)</h3>
+<p>
+  To request deletion of data stored by RevenueCat or PostHog, send an email to
+  <a href="mailto:support.nosastudio@gmail.com">support.nosastudio@gmail.com</a> with the subject:
+</p>
+<div class="callout">
+  <strong>Data Deletion Namenstag</strong>
+</div>
+<p>Please include one of the following in your message so we can locate your data:</p>
+<ul>
+  <li>your <strong>RevenueCat customer ID</strong> (found in the app under <em>Settings</em>), or</li>
+  <li>the <strong>email address</strong> used for the purchase on the Google Play Store.</li>
+</ul>
+<p>
+  We will process your request within <strong>30 days</strong>, forward the deletion to our processors
+  (RevenueCat and, if applicable, PostHog), and confirm completion to you by email.
+</p>
+
+<h2>4. Consequences of deletion</h2>
+<ul>
+  <li>An active subscription will continue until the end of the billing period you have already paid for;
+    payments already made are not refunded.</li>
+  <li>Once the RevenueCat customer ID is deleted, purchases can no longer be restored automatically on a
+    new device.</li>
+  <li>For legal reasons (e.g. tax retention obligations), we may retain invoicing and transaction records
+    for the period required by law.</li>
+</ul>
+
+<h2>5. Contact</h2>
+<div class="contact-box">
+  <p><strong>Nosa Studio</strong></p>
+  <p>Switzerland</p>
+  <p>Email: <a href="mailto:support.nosastudio@gmail.com">support.nosastudio@gmail.com</a></p>
+  <p>App package: <code>ch.slaven.namenstag</code></p>
+</div>
+
+<footer>
+  &copy; 2026 Nosa Studio · June 2026 · See also our
+  <a href="privacy_policy.html">Privacy Policy</a>.
+</footer>
+
+</div>
+</body>
+</html>
